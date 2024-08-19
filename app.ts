@@ -25,3 +25,12 @@ function SubNumber() {
   printResult.textContent = result.toString();
 }
 SubBtn.addEventListener("click", SubNumber);
+
+// For Multiply Button
+function MultiplyNumber() {
+  let a = parseFloat(number1.value);
+  let b = parseFloat(number2.value);
+  let result = a * b;
+  printResult.textContent = result.toString();
+}
+MultBtn.addEventListener("click", MultiplyNumber);
