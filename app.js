@@ -29,3 +29,16 @@ function MultiplyNumber() {
     printResult.textContent = result.toString();
 }
 MultBtn.addEventListener("click", MultiplyNumber);
+// For Divide Button
+function DivNumber() {
+    var a = parseFloat(number1.value);
+    var b = parseFloat(number2.value);
+    if (b != 0) {
+        var result = a / b;
+        printResult.textContent = result.toString();
+    }
+    else {
+        printResult.textContent = "Error: Division by zero is not allowed!";
+    }
+}
+DivBtn.addEventListener("click", DivNumber);
